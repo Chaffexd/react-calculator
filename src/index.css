@@ -1,4 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body, h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
+}
+
+@layer base {
+  :root { 
+    --background-color-main: hsl(222, 26%, 31%);
+    --background-color-key-main: hsl(225, 21%, 49%);
+    --key-bg: hsl(30, 25%, 89%);
+    --key-bg-red: hsl(6, 63%, 50%);
+  }
+}
+
+.bg-primary {
+  background-color: var(--background-color-main);
+}
+
+.bg-key-primary {
+  background-color: var(--background-color-key-main);
+}
+
+.bg-key {
+  background-color: var(--key-bg);
+}
+
+.bg-key-red {
+  background-color: var(--key-bg-red);
 }
