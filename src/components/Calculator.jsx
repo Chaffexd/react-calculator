@@ -49,44 +49,44 @@ function Calculator() {
   }
 
   return (
-    <div className="w-2/4">
+    <div className="w-5/12">
         <div className="flex justify-between p-4">
             <h1>calc</h1>
             <div>
                 <p>Theme</p>
             </div>
         </div>
-        <div className="p-4">
-            <input type="text" value={value} disabled className="w-full text-right p-6 rounded mb-4" />
+        <div className="">
+            <input type="text" value={value} disabled className="primary-input-display w-full text-right p-6 rounded mb-4" />
         </div>
-        <div className="p-4">
-            <div className="flex justify-between mb-2">
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("7")}>7</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("8")}>8</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("9")}>9</button>
-                <button className="bg-key-primary p-2 w-20" onClick={() => setValue("0")}>DEL</button>
+        <div className="p-4 primary-keypad-background rounded">
+            <div className="flex justify-between mb-4">
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("7")}>7</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("8")}>8</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("9")}>9</button>
+                <button className="bg-key-primary p-2 w-20 rounded" onClick={() => setValue("0")}>DEL</button>
             </div>
-            <div className="flex justify-between mb-2">
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("4")}>4</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("5")}>5</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("6")}>6</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleOperatorClick("+")}>+</button>
+            <div className="flex justify-between mb-4">
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("4")}>4</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("5")}>5</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("6")}>6</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleOperatorClick("+")}>+</button>
             </div>
-            <div className="flex justify-between mb-2">
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("1")}>1</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("2")}>2</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("3")}>3</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleOperatorClick("-")}>-</button>
+            <div className="flex justify-between mb-4">
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("1")}>1</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("2")}>2</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("3")}>3</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleOperatorClick("-")}>-</button>
             </div>
-            <div className="flex justify-between mb-2">
-                <button className="bg-key p-2 w-20" onClick={() => handleOperatorClick("/")}>.</button> 
-                <button className="bg-key p-2 w-20" onClick={() => handleDigitClick("0")}>0</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleOperatorClick("/")}>/</button>
-                <button className="bg-key p-2 w-20" onClick={() => handleOperatorClick("*")}>x</button>
+            <div className="flex justify-between mb-4">
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleOperatorClick("/")}>.</button> 
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleDigitClick("0")}>0</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleOperatorClick("/")}>/</button>
+                <button className="bg-key primary-text-color p-2 w-20 rounded" onClick={() => handleOperatorClick("*")}>x</button>
             </div>
-            <div>
-                <button className="bg-key-primary p-2 w-20" onClick={() => setValue("0")}>RESET</button>
-                <button className="bg-key-red p-2 w-20" onClick={() => handleEqualsClick()}>=</button>
+            <div className="flex justify-between gap-7">
+                <button className="bg-key-primary p-2 w-1/2 rounded" onClick={() => setValue("0")}>RESET</button>
+                <button className="bg-key-red p-2 w-1/2 rounded" onClick={() => handleEqualsClick()}>=</button>
             </div>
         </div>
     </div>
