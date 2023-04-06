@@ -16,6 +16,9 @@ body, h1, h2, h3, h4, h5, p {
     --primary-text-color: hsl(221, 14%, 31%);
     --primary-input-display: hsl(224, 36%, 15%);
     --primary-keypad-bg: hsl(223, 31%, 20%);
+    --bg-key-shadow: hsl(224, 28%, 35%); 
+    --bg-key-red-shadow: hsl(6, 70%, 34%);
+    --bg-key-white-shadow: hsl(28, 16%, 65%);
   }
 }
 
@@ -45,4 +48,19 @@ body, h1, h2, h3, h4, h5, p {
 
 .primary-keypad-background {
   background-color: var(--primary-keypad-bg);
+}
+
+.shadow {
+  border-bottom-color: var(--bg-key-shadow);
+  border-bottom-width: 2px;
+}
+
+.shadow-red {
+  border-bottom-color: var(--bg-key-red-shadow);
+  border-bottom-width: 2px;
+}
+
+.shadow-white {
+  border-bottom-color: var(--bg-key-white-shadow);
+  border-bottom-width: 2px;
 }
